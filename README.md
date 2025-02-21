@@ -14,14 +14,14 @@
 
 ### ✨ 🌟 **Key Features**
 
-🔥 Smart Task Prioritization with intuitive workflows.
-🚀 Real-time Collaboration & Notifications for teams.
-📅 Flexible Scheduling with seamless calendar sync.
-💡 Productivity Boost with smart reminders & insights.
-🧩 Drag-and-Drop Functionality for easy task management.
-🔒 Secure Authentication with Firebase.
-🌐 Fully Responsive Design for all devices.
-🎨 Smooth Animations powered by Framer Motion.
+-🔥 Smart Task Prioritization with intuitive workflows.<br>
+-🚀 Real-time Collaboration & Notifications for teams.<br>
+-📅 Flexible Scheduling with seamless calendar sync.<br>
+-💡 Productivity Boost with smart reminders & insights.<br>
+-🧩 Drag-and-Drop Functionality for easy task management.<br>
+-🔒 Secure Authentication with Firebase.<br>
+-🌐 Fully Responsive Design for all devices.<br>
+-🎨 Smooth Animations powered by Framer Motion.<br>
 
 ---
 
