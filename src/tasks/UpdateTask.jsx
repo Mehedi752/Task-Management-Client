@@ -91,9 +91,9 @@ const UpdateTask = () => {
                             }`}
                     >
                         <option value=''>Select Category</option>
-                        <option value='To-Do'>To-Do</option>
-                        <option value='In Progress'>In Progress</option>
-                        <option value='Done'>Done</option>
+                        <option value='to-do'>to-do</option>
+                        <option value='in-progress'>in-progress</option>
+                        <option value='done'>done</option>
                     </select>
                     {errors.category && (
                         <p className='text-red-500 text-sm'>{errors.category.message}</p>

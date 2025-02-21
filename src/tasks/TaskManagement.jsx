@@ -23,6 +23,8 @@ const TaskManagement = () => {
   const inProgressTasks = currentUserTasks.filter(task => task.category === 'in-progress')
   const doneTasks = currentUserTasks.filter(task => task.category === 'done')
 
+  refetch();
+
   
 
   return (

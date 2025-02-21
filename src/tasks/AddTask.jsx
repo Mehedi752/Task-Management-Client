@@ -77,9 +77,9 @@ const AddTask = () => {
                             }`}
                     >
                         <option value=''>Select Category</option>
-                        <option value='to-do'>To-Do</option>
-                        <option value='in-progress'>In Progress</option>
-                        <option value='done'>Done</option>
+                        <option value='to-do'>to-do</option>
+                        <option value='in-progress'>in-progress</option>
+                        <option value='done'>done</option>
                     </select>
                     {errors.category && (
                         <p className='text-red-500 text-sm'>{errors.category.message}</p>
