@@ -1,16 +1,22 @@
 import React, { use } from 'react'
 import useAuth from '../hooks/useAuth'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet, useNavigate } from 'react-router-dom'
 import { FaTasks } from 'react-icons/fa'
-import { MdAddTask } from 'react-icons/md'
+import { MdAddTask, MdHome } from 'react-icons/md'
 
 const TasksHome = () => {
-  const { user } = useAuth()
+  const { user, signOutUser} = useAuth()
   console.log(user)
+  const navigate = useNavigate();
+
+    const handleLogout = () => {
+        signOutUser()
+        navigate('/')
+    }
 
   return (
     <div className='flex flex-col lg:flex-row justify-between'>
-      <div className='bg-indigo-600 lg:w-1/4 lg:pl-[100px]'>
+      <div className='bg-gradient-to-r from-[#0f172a] to-[#1e293b] lg:w-1/4 lg:pl-[100px]'>
         {/* <h1 className='text-white text-4xl p-4 text-center'>Tasks Manager</h1> */}
         <div className='flex justify-center items-center pt-12'>
           <label tabIndex={0} className='avatar hover:opacity-90'>
@@ -34,9 +40,23 @@ const TasksHome = () => {
             <FaTasks /> Task Management
           </Link>
 
-          <Link to={'/tasks/add-task'} className='flex items-center gap-1 mt-2 text-white'>
+          <Link
+            to={'/tasks/add-task'}
+            className='flex items-center gap-1 mt-2 text-white'
+          >
             <MdAddTask /> Add Task
           </Link>
+
+          <Link
+            to={'/'}
+            className='flex items-center gap-1 mt-2 text-white'
+          >
+            <MdHome /> Home
+          </Link>
+
+          <button onClick={handleLogout} className='bg-red-600 text-white px-4 py-2 rounded mt-4'>
+            Logout
+          </button>
         </div>
       </div>
 
