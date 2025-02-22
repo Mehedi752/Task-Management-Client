@@ -30,12 +30,12 @@ const TaskManagement = () => {
   return (
     <DndProvider backend={HTML5Backend}>
       <div
-        className={`bg-gray-300 w-full lg:px-[150px] py-[50px] lg:h-screen px-6`}
+        className={`bg-gray-300 w-full lg:px-[80px] py-[50px] lg:h-screen px-6`}
       >
         {/* Task Categories */}
         <div className='flex flex-col lg:flex-row gap-10 lg:justify-between  p-4 text-white'>
           <div className='lg:w-[30%]'>
-            <h1 className='text-2xl bg-red-600 py-3 px-12 rounded-md'>
+            <h1 className='text-2xl bg-red-600 py-3 px-10 rounded-md'>
               To-Do({toDoTasks.length})
             </h1>
             <SharedTasks

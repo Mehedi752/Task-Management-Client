@@ -16,7 +16,7 @@ const TasksHome = () => {
 
   return (
     <div className='flex flex-col lg:flex-row justify-between'>
-      <div className='bg-gradient-to-r from-[#0f172a] to-[#1e293b] lg:w-1/4 lg:pl-[100px]'>
+      <div className='bg-gradient-to-r from-[#0f172a] to-[#1e293b] lg:w-[30%] lg:pl-[100px]'>
         {/* <h1 className='text-white text-4xl p-4 text-center'>Tasks Manager</h1> */}
         <div className='flex justify-center items-center pt-12'>
           <label tabIndex={0} className='avatar hover:opacity-90'>
@@ -32,7 +32,7 @@ const TasksHome = () => {
         <h3 className='text-2xl text-white text-center'>{user?.displayName}</h3>
 
         {/* Tasks Dashboard Links */}
-        <div className='pt-18 pl-12 pb-12'>
+        <div className='pt-18 pl-10 pb-12 pr-6'>
           <Link
             to={'/tasks/task-management'}
             className='flex items-center  gap-1 text-white'
